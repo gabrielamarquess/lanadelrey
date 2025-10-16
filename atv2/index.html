@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tabela Brasileirão Série A - (snapshot)</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; background:#f6f7fb; padding:20px; color:#111; }
+    h1 { font-size:20px; margin-bottom:10px; }
+    .table-wrap { overflow-x:auto; background:white; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06); padding:12px; }
+    table { border-collapse:collapse; width:100%; min-width:820px; }
+    th, td { padding:8px 10px; text-align:center; border-bottom:1px solid #eee; }
+    thead th { background:#0b5cff; color:white; font-weight:600; position:sticky; top:0; }
+    tbody tr:hover { background:#f1f8ff; }
+    td.pos { font-weight:700; width:48px; }
+    td.team { text-align:left; padding-left:12px; }
+    .sg-negative { color:#d33; } /* saldo negativo em vermelho */
+    .sg-positive { color:#0a8a00; } /* saldo positivo em verde */
+    @media (max-width:600px){
+      th:nth-child(3), td:nth-child(3) { display:none; } /* esconde col Pts em telas bem pequenas se quiser */
+    }
+  </style>
+</head>
+<body>
+  <h1>Brasileirão Série A — Classificação (snapshot)</h1>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Pos</th>
+          <th>Clube</th>
+          <th>Pontos</th>
+          <th>J</th>
+          <th>V</th>
+          <th>E</th>
+          <th>D</th>
+          <th>GP</th>
+          <th>GC</th>
+          <th>SG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="pos">1</td><td class="team">Palmeiras</td><td>61</td><td>27</td><td>19</td><td>4</td><td>4</td><td>51</td><td>23</td><td class="sg-positive">+28</td></tr>
+        <tr><td class="pos">2</td><td class="team">Flamengo</td><td>58</td><td>27</td><td>17</td><td>7</td><td>3</td><td>53</td><td>13</td><td class="sg-positive">+40</td></tr>
+        <tr><td class="pos">3</td><td class="team">Cruzeiro</td><td>53</td><td>28</td><td>15</td><td>8</td><td>5</td><td>41</td><td>21</td><td class="sg-positive">+20</td></tr>
+        <tr><td class="pos">4</td><td class="team">Mirassol</td><td>49</td><td>28</td><td>13</td><td>10</td><td>5</td><td>47</td><td>30</td><td class="sg-positive">+17</td></tr>
+        <tr><td class="pos">5</td><td class="team">Botafogo</td><td>43</td><td>28</td><td>12</td><td>7</td><td>9</td><td>37</td><td>26</td><td class="sg-positive">+11</td></tr>
+        <tr><td class="pos">6</td><td class="team">Bahia</td><td>43</td><td>26</td><td>12</td><td>7</td><td>7</td><td>34</td><td>30</td><td class="sg-positive">+4</td></tr>
+        <tr><td class="pos">7</td><td class="team">Fluminense</td><td>38</td><td>26</td><td>11</td><td>5</td><td>10</td><td>34</td><td>33</td><td class="sg-positive">+1</td></tr>
+        <tr><td class="pos">8</td><td class="team">São Paulo</td><td>38</td><td>27</td><td>10</td><td>8</td><td>9</td><td>31</td><td>28</td><td class="sg-positive">+3</td></tr>
+        <tr><td class="pos">9</td><td class="team">Vasco da Gama</td><td>36</td><td>28</td><td>10</td><td>6</td><td>12</td><td>44</td><td>41</td><td class="sg-positive">+3</td></tr>
+        <tr><td class="pos">10</td><td class="team">Red Bull Bragantino</td><td>36</td><td>28</td><td>10</td><td>6</td><td>12</td><td>34</td><td>43</td><td class="sg-negative">-9</td></tr>
+        <tr><td class="pos">11</td><td class="team">Ceará</td><td>35</td><td>27</td><td>9</td><td>8</td><td>10</td><td>27</td><td>25</td><td class="sg-positive">+2</td></tr>
+        <tr><td class="pos">12</td><td class="team">Corinthians</td><td>33</td><td>28</td><td>8</td><td>9</td><td>11</td><td>30</td><td>35</td><td class="sg-negative">-5</td></tr>
+        <tr><td class="pos">13</td><td class="team">Grêmio</td><td>33</td><td>27</td><td>8</td><td>9</td><td>10</td><td>28</td><td>33</td><td class="sg-negative">-5</td></tr>
+        <tr><td class="pos">14</td><td class="team">Atlético Mineiro</td><td>33</td><td>27</td><td>8</td><td>9</td><td>10</td><td>26</td><td>31</td><td class="sg-negative">-5</td></tr>
+        <tr><td class="pos">15</td><td class="team">Internacional</td><td>32</td><td>27</td><td>8</td><td>8</td><td>11</td><td>33</td><td>41</td><td class="sg-negative">-8</td></tr>
+        <tr><td class="pos">16</td><td class="team">Santos</td><td>31</td><td>27</td><td>8</td><td>7</td><td>12</td><td>28</td><td>39</td><td class="sg-negative">-11</td></tr>
+        <tr><td class="pos">17</td><td class="team">Vitória</td><td>25</td><td>27</td><td>5</td><td>10</td><td>12</td><td>24</td><td>42</td><td class="sg-negative">-18</td></tr>
+        <tr><td class="pos">18</td><td class="team">Fortaleza</td><td>24</td><td>27</td><td>6</td><td>6</td><td>15</td><td>26</td><td>43</td><td class="sg-negative">-17</td></tr>
+        <tr><td class="pos">19</td><td class="team">Juventude</td><td>23</td><td>27</td><td>6</td><td>5</td><td>16</td><td>22</td><td>52</td><td class="sg-negative">-30</td></tr>
+        <tr><td class="pos">20</td><td class="team">Sport</td><td>17</td><td>27</td><td>2</td><td>11</td><td>14</td><td>21</td><td>42</td><td class="sg-negative">-21</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12px; color:#666; margin-top:8px;">
+    Dados base: snapshot da tabela oficial (CBF) e página do ge. Atualizado em 16/10/2025 conforme a CBF/GE. (Se quiser, eu transformo isso em PDF/PNG para entrega.)
+  </p>
+</body>
+</html>
