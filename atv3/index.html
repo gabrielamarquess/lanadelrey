@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Anamnese - Clínica TecnoVida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #006666;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 2px solid #009999;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+      color: #009999;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    button {
+      background-color: #009999;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #007777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulário de Anamnese - Clínica TecnoVida</h1>
+
+  <form action="#" method="post">
+
+    <!-- SEÇÃO 1: DADOS PESSOAIS -->
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+      <label>Gênero:</label>
+      <input type="radio" id="masculino" name="genero" value="Masculino"> Masculino
+      <input type="radio" id="feminino" name="genero" value="Feminino"> Feminino
+      <input type="radio" id="outro" name="genero" value="Outro"> Outro
+
+      <label for="cpf">CPF:</label>
+      <input type="number" id="cpf" name="cpf" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <!-- SEÇÃO 2: HISTÓRICO DE SAÚDE -->
+    <fieldset>
+      <legend>Histórico de Saúde</legend>
+
+      <label>Possui alguma doença crônica?</label>
+      <input type="radio" name="doencaCronica" value="Sim"> Sim
+      <input type="radio" name="doencaCronica" value="Não"> Não
+
+      <label for="medicamentos">Quais medicamentos você utiliza regularmente?</label>
+      <textarea id="medicamentos" name="medicamentos" rows="3"></textarea>
+
+      <label><input type="checkbox" id="fuma" name="fuma" value="Sim"> Você fuma?</label>
+
+      <label for="altura">Altura (em cm):</label>
+      <input type="number" id="altura" name="altura" min="50" max="250">
+
+      <label for="peso">Peso (em kg):</label>
+      <input type="number" id="peso" name="peso" min="20" max="300">
+    </fieldset>
+
+    <!-- SEÇÃO 3: DETALHES DA CONSULTA -->
+    <fieldset>
+      <legend>Detalhes da Consulta</legend>
+
+      <label for="motivo">Qual é o principal motivo da sua consulta?</label>
+      <textarea id="motivo" name="motivo" rows="3"></textarea>
+
+      <label for="exercicios">Com que frequência você pratica exercícios físicos?</label>
+      <select id="exercicios" name="exercicios">
+        <option value="">Selecione</option>
+        <option value="Diariamente">Diariamente</option>
+        <option value="Semanalmente">Semanalmente</option>
+        <option value="Raramente">Raramente</option>
+        <option value="Nunca">Nunca</option>
+      </select>
+
+      <label for="ultimaConsulta">Data da Última Consulta (aproximada):</label>
+      <input type="date" id="ultimaConsulta" name="ultimaConsulta">
+
+      <label>Prefere ser contatado por:</label>
+      <input type="radio" name="contato" value="Telefone"> Telefone
+      <input type="radio" name="contato" value="E-mail"> E-mail
+    </fieldset>
+
+    <button type="submit">Enviar Formulário</button>
+  </form>
+
+</body>
+</html>
